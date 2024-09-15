@@ -902,6 +902,18 @@ body {
 
 
     }
+
+    .flex_for_card {
+        background-color: green;
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
+        padding: 0px 70px;
+        scrollbar-width: none;
+        gap:30px;
+    }
+
 }
 
 @media (min-width:600px) {
@@ -918,10 +930,11 @@ body {
     .bg_main {
         display: none;
     }
-     .video_section {
+
+    .video_section {
         position: relative;
         width: 100%;
-        height:auto;
+        height: auto;
         padding-bottom: 56.25%;
         overflow: hidden;
         margin: auto auto;
@@ -935,6 +948,7 @@ body {
         object-fit: cover;
         object-position: center;
     }
+
     .links_footer {
         display: none;
     }
@@ -1066,10 +1080,11 @@ body {
     .bg_main {
         display: none;
     }
-     .video_section {
+
+    .video_section {
         position: relative;
         width: 100%;
-        height:auto;
+        height: auto;
         padding-bottom: 56.25%;
         overflow: hidden;
         margin: auto auto;
