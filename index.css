@@ -898,13 +898,13 @@ body {
 
     .review_card {
         width: 100%;
-        background-color: red;
+        /* background-color: red; */
 
 
     }
 
     .flex_for_card {
-        background-color: green;
+        /* background-color: green; */
         /* border: 1px solid black; */
         display: flex;
         align-items: center;
@@ -912,6 +912,7 @@ body {
         padding: 0px 70px;
         scrollbar-width: none;
         gap:30px;
+
     }
 
 }
