@@ -405,7 +405,6 @@ body {
 
 .review_div {
     display: flex;
-    gap: 30px;
 
     & p {
         margin-right: -10px;
@@ -762,6 +761,10 @@ body {
 
     }
 
+    figcaption {
+        font-size: 10px;
+    }
+
     @keyframes roundslide {
         to {
             transform: translateX(-100%);
@@ -898,6 +901,232 @@ body {
     }
 
     .review_card {
+        width: 100%;
+        /* background-color: red; */
+
+
+    }
+
+    .flex_for_card {
+        /* background-color: green; */
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
+        padding: 0px 70px;
+        scrollbar-width: none;
+        gap: 30px;
+
+    }
+
+    .cover_screen {
+        background-color: var(--footer-bgcolor);
+     
+    }
+
+    .for_hyperlink_cs {
+        position: fixed;
+        z-index:999;
+        background-color: var(--footer-bgcolor);
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        gap: 50px;
+        overflow-y: scroll;
+    }
+
+    #close_cs {
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        width: 20px;
+        cursor: pointer;
+    }
+
+    #logo_cs {
+        width: 400px;
+        height: 400px;
+    }
+
+    .cs1 {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 20px;
+
+        & a {
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            border-bottom: 2px solid transparent;
+            text-decoration: none;
+        } & a:hover{
+            border-color:white;
+
+        }
+    }
+
+    .dropdown_cs {
+        fill: white;
+        width: 20px;
+        margin-left: 20px;
+    }
+    .burger{
+        cursor: pointer;
+    }
+
+
+}
+
+@media (min-width:600px) {
+
+    .Hero {
+        display: flex;
+    }
+
+    /* SHOWING new */
+    .HeroNew {
+        display: none;
+    }
+
+    .bg_main {
+        display: none;
+    }
+
+    .video_section {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+        margin: auto auto;
+    }
+
+    .video_section #video_original {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+
+    /* ----- */
+    .links_footer_ul {
+        background-color: var(--footer-bgcolor);
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+    }
+
+    /* ---------------------- */
+
+    .bg_main {
+        background-color: var(--footer-bgcolor);
+        width: 100%;
+        height: auto;
+
+        & hr {
+            color: #ffffff;
+        }
+    }
+
+    .logo_holding {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .logo_ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    .social_logo {
+        display: flex;
+        gap: 30px;
+    }
+
+
+
+    .track_order,
+    .information,
+    .AboutPooja,
+    .CustomerCare {
+        padding: 20px 0;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & .drop_down {
+            transform: rotate(90deg);
+            cursor: pointer;
+        }
+    }
+
+
+
+    .bootom_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 30px;
+    }
+
+    .drop_down_list a {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+    }
+
+    .drop_down_list p {
+        color: white;
+        margin: 10px 0px;
+    }
+
+    /* New nav */
+    .HeroNew .h_link {
+        display: none;
+    }
+
+    /* for_all_nav */
+    .for_all_nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+
+    /* Hide main */
+    .Hero {
+        display: none;
+    }
+
+    /* SHOWING new */
+    .HeroNew {
+        display: block;
+    }
+
+    .review_card {
         width: 70%;
 
 
@@ -918,10 +1147,11 @@ body {
     .bg_main {
         display: none;
     }
-     .video_section {
+
+    .video_section {
         position: relative;
         width: 100%;
-        height:auto;
+        height: auto;
         padding-bottom: 56.25%;
         overflow: hidden;
         margin: auto auto;
