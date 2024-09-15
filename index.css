@@ -405,7 +405,6 @@ body {
 
 .review_div {
     display: flex;
-    gap: 30px;
 
     & p {
         margin-right: -10px;
@@ -787,6 +786,155 @@ body {
         object-position: center;
     }
 
+    .links_footer {
+        display: none;
+    }
+
+    /* ----- */
+    .links_footer_ul {
+        background-color: var(--footer-bgcolor);
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+    }
+
+    /* ---------------------- */
+
+    .bg_main {
+        background-color: var(--footer-bgcolor);
+        width: 100%;
+        height: auto;
+
+        & hr {
+            color: #ffffff;
+        }
+    }
+
+    .logo_holding {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .logo_ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    .social_logo {
+        display: flex;
+        gap: 30px;
+    }
+
+
+
+    .track_order,
+    .information,
+    .AboutPooja,
+    .CustomerCare {
+        padding: 20px 0;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & .drop_down {
+            transform: rotate(90deg);
+            cursor: pointer;
+        }
+    }
+
+
+
+    .bootom_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 30px;
+    }
+
+    .drop_down_list a {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+    }
+
+    .drop_down_list p {
+        color: white;
+        margin: 10px 0px;
+    }
+
+    /* New nav */
+    .HeroNew .h_link {
+        display: none;
+    }
+
+    /* for_all_nav */
+    .for_all_nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+
+    /* Hide main */
+    .Hero {
+        display: none;
+    }
+
+    /* SHOWING new */
+    .HeroNew {
+        display: block;
+    }
+
+    .review_card {
+        width: 100%;
+        background-color: red;
+
+
+    }
+}
+
+@media (min-width:600px) {
+
+    .Hero {
+        display: flex;
+    }
+
+    /* SHOWING new */
+    .HeroNew {
+        display: none;
+    }
+
+    .bg_main {
+        display: none;
+    }
+     .video_section {
+        position: relative;
+        width: 100%;
+        height:auto;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+        margin: auto auto;
+    }
+
+    .video_section #video_original {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
     .links_footer {
         display: none;
     }
