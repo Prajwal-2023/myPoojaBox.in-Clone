@@ -127,4 +127,20 @@ svgLogo2.addEventListener('click', function () {
 });
 
 
+// Burger toggle
+const burger = document.querySelector('.burger');
+const coverScreen = document.querySelector('.cover_screen'); 
+const closeScreen = document.querySelector('#close_cs');
+const body  = document.querySelector('body');
+
+burger.addEventListener('click' , () =>{
+    coverScreen.style.display = `flex`;
+    
+});
+closeScreen.addEventListener('click' , () =>{
+    coverScreen.style.display = `none`;
+
+})
+
+
 
