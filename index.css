@@ -405,11 +405,16 @@ body {
 
 .review_div {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px;
 
     & p {
         margin-right: -10px;
         margin-left: 10px;
     }
+
+    
 
 }
 
@@ -951,8 +956,8 @@ body {
     }
 
     #logo_cs {
-        width: 400px;
-        height: 400px;
+        width: 370px;
+        height: 370px;
     }
 
     .cs1 {
@@ -981,7 +986,15 @@ body {
     .burger{
         cursor: pointer;
     }
+/* review start div */
+.review_div div img{
+    width:8px;
+    height:8px;
+}
+.review_div div{
+    margin-left:20px;
 
+}
 
 }
 
