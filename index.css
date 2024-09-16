@@ -29,12 +29,30 @@ body {
     color: #ffffff;
     text-align: center;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
     letter-spacing: 3px;
 
+    & p {
+        animation: scaleText 1s infinite alternate;
+    }
+
+}
+
+@keyframes scaleText {
+    0% {
+       transform: scale(1);
+    }
+
+    50% {
+      transform: scale(0.9);
+    }
+
+    100% {
+       transform: scale(1);
+    }
 }
 
 /* HERO NAV*/
@@ -407,14 +425,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap:20px;
+    gap: 20px;
 
     & p {
         margin-right: -10px;
         margin-left: 10px;
     }
 
-    
+
 
 }
 
@@ -926,12 +944,12 @@ body {
 
     .cover_screen {
         background-color: var(--footer-bgcolor);
-     
+
     }
 
     .for_hyperlink_cs {
         position: fixed;
-        z-index:999;
+        z-index: 999;
         background-color: var(--footer-bgcolor);
         top: 0;
         bottom: 0;
@@ -972,8 +990,10 @@ body {
             font-weight: 600;
             border-bottom: 2px solid transparent;
             text-decoration: none;
-        } & a:hover{
-            border-color:white;
+        }
+
+        & a:hover {
+            border-color: white;
 
         }
     }
@@ -983,18 +1003,21 @@ body {
         width: 20px;
         margin-left: 20px;
     }
-    .burger{
+
+    .burger {
         cursor: pointer;
     }
-/* review start div */
-.review_div div img{
-    width:8px;
-    height:8px;
-}
-.review_div div{
-    margin-left:20px;
 
-}
+    /* review start div */
+    .review_div div img {
+        width: 8px;
+        height: 8px;
+    }
+
+    .review_div div {
+        margin-left: 20px;
+
+    }
 
 }
 
