@@ -43,15 +43,15 @@ body {
 
 @keyframes scaleText {
     0% {
-       transform: scale(1);
+        transform: scale(1);
     }
 
     50% {
-      transform: scale(0.9);
+        transform: scale(0.9);
     }
 
     100% {
-       transform: scale(1);
+        transform: scale(1);
     }
 }
 
@@ -708,6 +708,37 @@ body {
 .download_btns img {
     width: 100px;
     margin-right: 10px;
+}
+
+/* Read more text */
+.read_btn {
+    /* background-color:red; */
+    cursor: pointer;
+    color: #d3134f;
+    text-align: center;
+    width:5.7%;
+    white-space: nowrap;
+    margin: auto auto;
+
+    & .read_btn:hover {
+        color: #940935;
+    }
+}
+.read_text{
+    line-height: 30px;
+}
+#hindi_text{
+    line-height:40px;
+}
+
+#pink_text {
+    color:var(--offer-bgcolor);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#pink_text:hover {
+    color:#d3134f;
 }
 
 
