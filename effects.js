@@ -75,6 +75,9 @@ righttBtn.addEventListener('click', function () {
 
 
 // Drop down for footer
+// rotate function
+
+// 
 let flag = 1;
 const svgLogo = document.getElementsByClassName('drop_down')[0];
 const dropDownList = document.getElementsByClassName('drop_down_list')[0];
@@ -122,6 +125,54 @@ svgLogo2.addEventListener('click', function () {
     } else {
         svgLogo2.style.transform = `rotate(90deg)`; 
         dropDownList2.style.display = 'none'; 
+        flag = 1;
+    }       
+});
+
+// -----
+const svgLogo3 = document.getElementsByClassName('drop_down')[3];
+const dropDownList3 = document.getElementsByClassName('drop_down_list')[3];
+
+svgLogo3.addEventListener('click', function () {
+    if (flag === 1) {
+        svgLogo3.style.transform = `rotate(-90deg)`;  
+        dropDownList3.style.display = 'block';
+        flag = 0;
+    } else {
+        svgLogo3.style.transform = `rotate(90deg)`; 
+        dropDownList3.style.display = 'none'; 
+        flag = 1;
+    }       
+});
+
+// ------
+const svgLogo4 = document.getElementsByClassName('drop_down')[4];
+const dropDownList4 = document.getElementsByClassName('drop_down_list')[4];
+
+svgLogo4.addEventListener('click', function () {
+    if (flag === 1) {
+        svgLogo4.style.transform = `rotate(-90deg)`;  
+        dropDownList4.style.display = 'block';
+        flag = 0;
+    } else {
+        svgLogo4.style.transform = `rotate(90deg)`; 
+        dropDownList4.style.display = 'none'; 
+        flag = 1;
+    }       
+});
+
+// -----
+const svgLogo5 = document.getElementsByClassName('drop_down')[5];
+const dropDownList5 = document.getElementsByClassName('drop_down_list')[5];
+
+svgLogo5.addEventListener('click', function () {
+    if (flag === 1) {
+        svgLogo5.style.transform = `rotate(-90deg)`;  
+        dropDownList5.style.display = 'block';
+        flag = 0;
+    } else {
+        svgLogo5.style.transform = `rotate(90deg)`; 
+        dropDownList5.style.display = 'none'; 
         flag = 1;
     }       
 });
