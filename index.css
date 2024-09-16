@@ -711,19 +711,10 @@ body {
 }
 
 /* Read more text */
-.read_btn {
-    /* background-color:red; */
-    cursor: pointer;
-    color: #d3134f;
-    text-align: center;
-    width:5.7%;
-    white-space: nowrap;
-    margin: auto auto;
-
-    & .read_btn:hover {
+.read_btn:hover {
         color: #940935;
     }
-}
+
 .read_text{
     line-height: 30px;
 }
