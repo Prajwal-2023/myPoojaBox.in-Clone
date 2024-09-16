@@ -74,6 +74,78 @@ righttBtn.addEventListener('click', function () {
 
 
 
+//  Read text
+
+
+const readMoreText = document.querySelector('#read_more_text');
+const readMoreText1 = document.querySelector('#read_more_text1')
+const dots = document.querySelector('#dots_elips');
+const readMoreBtn = document.querySelector('.read_btn');
+dots.textContent= `......`;
+let textFlag =1
+
+readMoreBtn.addEventListener('click', function(){
+    if(textFlag === 1){
+        readMoreText.style.display = 'block';
+        readMoreText1.style.display = 'block';
+        readMoreBtn.textContent = 'Read Less';
+        dots.textContent= ` `;
+        textFlag = 0;
+    }
+    else{
+        textFlag = 1;
+        dots.textContent= `......`;
+        readMoreText.style.display = 'none';
+        readMoreText1.style.display = 'none';
+        readMoreBtn.textContent = 'Read More';
+
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Drop down for footer
 // rotate function
 
